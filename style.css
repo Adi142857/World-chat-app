@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+*{
+    overflow:scroll;
+}
+body {
+    box-sizing:border-box;
+}
+fieldset{
+    border-style:double;
+    border-width:4px;
+    border-color:red blue;
+}
+form{
+    width:100%;
+}
+label{
+    font-family: 'Chelsea Market', cursive;
+}
+input{
+    width:calc(100% - 4px);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:bold;
+}
+legend{
+    font-family: 'Anton', sans-serif;
+    border-style:double double solid double;
+    border-width:4px;
+    border-color:#23a6d5;
+}
+textarea{
+    width:calc(100% - 5px);
+    height:100px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:bold;
+}
+#dv{
+    border:2px solid #0000ff;
+    margin-top:50px;
+}
+#nm{
+    display:inline;
+    padding-left:10px;
+    font-family: 'Chelsea Market', cursive;
+    padding-top:10px;
+    padding-right:10px;
+}
+#nb{
+    
+    margin-top:5px;
+    padding:7px 5px 15px 10px;
+    font-size:12px;
+    font-weight:bold;
+    font-family:font-family: 'Rowdies', cursive;;
+}
+#mn{
+    margin-left:15px;
+    margin-right:15px;
+    border-left:5px #23a6d5;
+    background-color: #23d5ab;
+    border-radius:10px 30px 10px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#myBtn{
+    height:20px;
+    float:right;
+    width:60px;
+    margin-top:10px;
+    font-size:10px;
+    background-color:black;
+    color:white;
+}
+#btn1{
+    position:fixed ;
+    right:10px;
+    top:10px;
+    border-radius:50%;
+    background-color:yellow;
+}
+#btn2{
+    position:fixed ;
+    right:10px;
+    bottom:10px;
+    border-radius:50%;
+    background-color:pink;
+}
+a{
+    text-decoration:none;
+}
+i{
+    font-size:30px;
+}
+#count{
+    display:none;
+}
+h2{
+    color:red;
+}
+.ripple{
+    height:140px;
+    width:140px;
+    background:#23a6d5;
+
+    position:fixed;
+    animation:ripple 0.5s linear;
+    border-radius:50%;
+    opacity:0;
+    transform:scale(0);
+    transform-origin:center;
+    z-index:10;
+}
+@keyframes ripple{
+    0%{
+        transform:scale(0);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0;
+    }
+}
+
+
+#cr{
+    height:100vh;
+    width:100%;
+    overflow:scroll;
+}
